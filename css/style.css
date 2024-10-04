@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+nav {
+  background-color: #3b3a3a;
+  color: white;
+  display: grid;
+  grid-template-columns: 30% auto;
+  padding: 10px 5%;
+}
+
+.array-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.array-inputs label {
+  color: white;
+  font-size: 16px;
+}
+
+.array-inputs input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.array-inputs input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.array-inputs input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.array-inputs button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  grid-column: span 2;
+}
+
+.array-inputs button:hover {
+  background-color: #45a049;
+}
+
+.header_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.algos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.algos button {
+  background-color: #fff;
+  border: none;
+  color: #3b3a3a;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.algos button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  padding: 20px;
+}
+
+.Complexity_Containers {
+  margin-top: 20px;
+}
+
+.Pair_Definitions {
+  margin-bottom: 10px;
+}
+
+.Sub_Heading {
+  font-size: 16px;
+}
+
+#array_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: #f9f9f9;
+}
+
+footer {
+  background-color: #3b3a3a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
